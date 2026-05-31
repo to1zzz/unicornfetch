@@ -1,23 +1,35 @@
-🦄 UnicornFetch
+```markdown
+<p align="center">
+  <img src="screenshots/Screenshot%20from%202026-05-31%2019-33-54.png" alt="UnicornFetch preview" width="600">
+</p>
 
-A minimalistic fetch utility for Linux, written in Go.
+# 🦄 UnicornFetch
 
-✨ Features
+<div align="center">
 
-Fast & Lightweight – Single Go binary with zero dependencies.
+[![Go Version](https://img.shields.io/github/go-mod/go-version/to1zzz/unicornfetch?style=for-the-badge&logo=go&label=Go&color=00ADD8)](https://go.dev/)
+[![Linux Support](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://kernel.org/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/to1zzz/unicornfetch?style=for-the-badge&color=blueviolet)](https://github.com/to1zzz/unicornfetch/commits/main)
 
-Clean & Colorful – Displays system info next to a hungry unicorn ASCII art.
+**A minimalistic fetch utility for Linux, written in Go.**
 
-Linux Optimized – Built specifically for Linux-based systems.
+<br/>
+</div>
 
-Easy to Install – Simple build from source and copy to your $PATH.
+## ✨ Features
 
-Extensible – Pure Go code, easy to modify and customize.
+- **Fast & Lightweight** – Single Go binary with zero dependencies.
+- **Clean & Colorful** – Displays system info next to a hungry unicorn ASCII art.
+- **Linux Optimized** – Built specifically for Linux-based systems.
+- **Easy to Install** – Simple build from source and copy to your `$PATH`.
+- **Extensible** – Pure Go code, easy to modify and customize.
 
-🖥️ Showcase
+## 🖥️ Showcase
 
 Here is UnicornFetch in action on a Gentoo Linux system:
 
+```text
 $ unicornfetch
 
           \/`-.,    OS          Gentoo Linux
@@ -25,61 +37,75 @@ $ unicornfetch
       ('> ('>       Uptime      2d 4h 23m
       /\"( /\"(     Packages    1423 (Gentoo)
       \_)` \_)`     Init        OpenRC
-      mrf mrf       WM          Niri
+      mrf  mrf      WM          Niri
                     CPU         AMD Ryzen 9 7950X
 unicorn is hungry   GPU         AMD Radeon RX 6900 XT
                     Memory      4.2 / 31.3 GiB
                     Disk        128G / 512G (25%)
                     Terminal    kitty
 
+```
 
-📦 Installation
+## 📦 Installation
 
-Prerequisites
+### Prerequisites
 
-Go (version 1.21+ recommended)
+* [Go](https://go.dev/dl/) (version 1.21+ recommended)
+* `git` (to clone the repository)
 
-git (to clone the repository)
+### Steps
 
-Steps
+1. **Clone the repository:**
 
-Clone the repository:
+```bash
+   git clone [https://github.com/to1zzz/unicornfetch.git](https://github.com/to1zzz/unicornfetch.git)
+   cd unicornfetch
 
-git clone https://github.com/to1zzz/unicornfetch.git
-cd unicornfetch
+```
 
+2. **Build the binary:**
 
-Build the binary:
+```bash
+   go build -o unicornfetch
 
-go build -o unicornfetch
+```
 
+3. **Move to a directory in your `PATH` (optional but recommended):**
 
-Move to a directory in your PATH (optional but recommended):
+```bash
+   sudo cp unicornfetch /usr/local/bin/
 
-sudo cp unicornfetch /usr/local/bin/
+```
 
+Now you can run `unicornfetch` from anywhere in your terminal.
 
-Now you can run unicornfetch from anywhere in your terminal.
-
-🚀 Usage
+## 🚀 Usage
 
 Simply run the compiled binary:
 
+```bash
 ./unicornfetch
 
+```
 
-Or if you've added it to your PATH:
+Or if you've added it to your `PATH`:
 
+```bash
 unicornfetch
 
+```
 
-🛠️ Build from source (without installing)
+## 🛠️ Build from source (without installing)
 
 If you prefer not to install the binary system-wide, you can run it directly from the project directory:
 
+```bash
 go run .
 
+```
 
-📜 License
+## 📜 License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the **MIT License**. See the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
+
+---
