@@ -1,4 +1,3 @@
-```markdown
 <p align="center">
   <img src="screenshots/Screenshot%20from%202026-05-31%2019-33-54.png" alt="UnicornFetch preview" width="600">
 </p>
@@ -43,9 +42,6 @@ unicorn is hungry   GPU         AMD Radeon RX 6900 XT
                     Memory      4.2 / 31.3 GiB
                     Disk        128G / 512G (25%)
                     Terminal    kitty
-
-```
-
 ## 📦 Installation
 
 ### Prerequisites
