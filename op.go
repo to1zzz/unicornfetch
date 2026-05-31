@@ -59,7 +59,7 @@ func main() {
 		value string
 		color string
 	}{
-		{"OS", info.OS, dim},           // ← значение теперь серое, как метка
+		{"OS", info.OS, dim},           
 		{"Kernel", info.Kernel, cyan},
 		{"Uptime", info.Uptime, green},
 		{"Packages", info.Packages, purple},
@@ -275,7 +275,6 @@ func cleanGPUName(raw string) string {
 		return raw
 	}
 
-	// Ищем производителя, но не сохраняем – убираем его из слов
 	for i, w := range words {
 		lower := strings.ToLower(w)
 		if _, ok := vendors[lower]; ok {
@@ -283,8 +282,7 @@ func cleanGPUName(raw string) string {
 			break
 		}
 	}
-	// Если производитель не распознан – пробуем убрать первый элемент,
-	// если он похож на название вендора (например, "XFX")
+
 	if len(words) > 0 {
 		first := words[0]
 		firstLower := strings.ToLower(first)
@@ -301,7 +299,6 @@ func cleanGPUName(raw string) string {
 		}
 	}
 
-	// Убираем мусорные слова
 	badPrefixes := map[string]bool{"merc": true, "speedster": true, "series": true, "edition": true}
 	filtered := []string{}
 	skipNext := false
