@@ -1,6 +1,6 @@
 ```markdown
 <p align="center">
-  <img src="screenshots/Screenshot from 2026-05-31 19-33-54.png" alt="UnicornFetch preview" width="600">
+  <img src="screenshots/unicornfetch-demo.png" alt="UnicornFetch preview" width="600">
 </p>
 
 # 🦄 UnicornFetch
@@ -29,7 +29,7 @@
 
 Here is UnicornFetch in action on a Gentoo Linux system:
 
-```bash
+```text
 $ unicornfetch
 
           \/`-.,   OS         Gentoo Linux
