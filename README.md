@@ -1,6 +1,6 @@
 ```markdown
 <p align="center">
-  <img src="screenshots/unicornfetch-demo.png" alt="UnicornFetch preview" width="600">
+  <img src="screenshots/Screenshot%20from%202026-05-31%2019-33-54.png" alt="UnicornFetch preview" width="600">
 </p>
 
 # 🦄 UnicornFetch
@@ -9,7 +9,7 @@
 
 [![Go Version](https://img.shields.io/github/go-mod/go-version/to1zzz/unicornfetch?style=for-the-badge&logo=go&label=Go&color=00ADD8)](https://go.dev/)
 [![Linux Support](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://kernel.org/)
-[![License](https://img.shields.io/github/license/to1zzz/unicornfetch?style=for-the-badge&color=blue)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/to1zzz/unicornfetch?style=for-the-badge&color=blueviolet)](https://github.com/to1zzz/unicornfetch/commits/main)
 
 **A minimalistic fetch utility for Linux, written in Go.**
@@ -103,4 +103,14 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 <div align="center">
   <sub>Made with ❤️ and Go by <a href="https://github.com/to1zzz">to1zzz</a></sub>
 </div>
+```
+
+Чтобы всё заработало, выполните в терминале:
+
+```bash
+cd ~/путь/к/unicornfetch  # перейдите в папку вашего проекта
+git pull origin main       # на всякий случай получите последние изменения
+git add README.md
+git commit -m "fix: исправлен README"
+git push origin main
 ```
