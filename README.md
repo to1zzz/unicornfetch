@@ -40,11 +40,6 @@ unicorn is hungry   GPU         AMD Radeon RX 6900 XT
                     Terminal    kitty
 
 ```
-
-<p align="center">
-  <img src="screenshots/Screenshot%20from%202026-05-31%2019-33-54.png" alt="UnicornFetch preview" width="600">
-</p>
-
 ## 📦 Installation
 
 ### Prerequisites
