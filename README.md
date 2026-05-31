@@ -1,3 +1,5 @@
+
+
 ```markdown
 <p align="center">
   <img src="screenshots/Screenshot%20from%202026-05-31%2019-33-54.png" alt="UnicornFetch preview" width="600">
@@ -103,4 +105,12 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 <div align="center">
   <sub>Made with ❤️ and Go by <a href="https://github.com/to1zzz">to1zzz</a></sub>
 </div>
+```
+
+После замены файла сделайте:
+
+```bash
+git add README.md
+git commit -m "fix: закрывающие кавычки для ASCII-блока"
+git push origin main
 ```
