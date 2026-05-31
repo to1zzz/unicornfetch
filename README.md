@@ -1,106 +1,145 @@
-```markdown
+````md
+# 🦄 unicornfetch
+
+A lightweight system fetch utility written in Go with a unicorn-themed ASCII logo.
+
 <p align="center">
-  <img src="screenshots/unicornfetch-demo.png" alt="UnicornFetch preview" width="600">
+  <img src="./assets/preview.png" width="700">
 </p>
 
-# 🦄 UnicornFetch
-
-<div align="center">
-
-[![Go Version](https://img.shields.io/github/go-mod/go-version/to1zzz/unicornfetch?style=for-the-badge&logo=go&label=Go&color=00ADD8)](https://go.dev/)
-[![Linux Support](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://kernel.org/)
-[![License](https://img.shields.io/github/license/to1zzz/unicornfetch?style=for-the-badge&color=blue)](LICENSE)
-[![GitHub last commit](https://img.shields.io/github/last-commit/to1zzz/unicornfetch?style=for-the-badge&color=blueviolet)](https://github.com/to1zzz/unicornfetch/commits/main)
-
-**A minimalistic fetch utility for Linux, written in Go.**
-
-<br/>
-</div>
+---
 
 ## ✨ Features
 
-- **Fast & Lightweight** – Single Go binary with zero dependencies.
-- **Clean & Colorful** – Displays system info next to a hungry unicorn ASCII art.
-- **Linux Optimized** – Built specifically for Linux-based systems.
-- **Easy to Install** – Simple build from source and copy to your `$PATH`.
-- **Extensible** – Pure Go code, easy to modify and customize.
+- Fast and lightweight
+- Written in Go
+- Unicorn ASCII art
+- Linux-friendly output
+- Simple and minimal design
 
-## 🖥️ Showcase
-
-Here is UnicornFetch in action on a Gentoo Linux system:
-
-```text
-$ unicornfetch
-
-          \/`-.,   OS         Gentoo Linux
-          \/`-.,   Kernel     6.6.16-gentoo-dist
-          \/`-.,   Uptime     2d 4h 23m
-       _ _\/`-.,   Packages   1423 (Gentoo)
-      ('> ('>\/`-., Init       OpenRC
-      /\"( /\"(\/`-., WM        Niri
-      \_)` \_)`     CPU        AMD Ryzen 9 7950X
-      mrf mrf       GPU        AMD Radeon RX 6900 XT
-unicorn is hungry   Memory     4.2 / 31.3 GiB
-                    Disk       128G / 512G (25%)
-                    Terminal   kitty
-```
+---
 
 ## 📦 Installation
 
-### Prerequisites
-
-- [Go](https://go.dev/dl/) (version 1.21+ recommended)
-- `git` (to clone the repository)
-
-### Steps
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/to1zzz/unicornfetch.git
-   cd unicornfetch
-   ```
-
-2. **Build the binary:**
-   ```bash
-   go build -o unicornfetch op.go
-   ```
-
-3. **Move to a directory in your `PATH` (optional but recommended):**
-   ```bash
-   sudo cp unicornfetch /usr/local/bin/
-   ```
-
-Now you can run `unicornfetch` from anywhere in your terminal.
-
-## 🚀 Usage
-
-Simply run the compiled binary:
+### Build from source
 
 ```bash
-./unicornfetch
+git clone https://github.com/to1zzz/unicornfetch.git
+cd unicornfetch
+go build -o unicornfetch
+````
+
+### Install via Go
+
+```bash
+go install github.com/to1zzz/unicornfetch@latest
 ```
 
-Or if you've added it to your `PATH`:
+---
+
+## 🚀 Usage
 
 ```bash
 unicornfetch
 ```
 
-## 🛠️ Build from source (without installing)
-
-If you prefer not to install the binary system-wide, you can run it directly from the project directory:
+### Options
 
 ```bash
-go run op.go
+unicornfetch --help
+unicornfetch --version
+unicornfetch --no-color
 ```
-
-## 📜 License
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-<div align="center">
-  <sub>Made with ❤️ and Go by <a href="https://github.com/to1zzz">to1zzz</a></sub>
-</div>
+## ⚙️ Makefile
+
+```makefile
+build:
+	go build -o unicornfetch .
+
+run:
+	go run .
+
+install:
+	go install .
+
+clean:
+	rm -f unicornfetch
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+.
+├── cmd/
+│   └── unicornfetch/
+│       └── main.go
+├── internal/
+│   └── fetch/
+│       └── fetch.go
+├── assets/
+│   └── preview.png
+├── go.mod
+├── Makefile
+└── README.md
+```
+
+---
+
+## 🧠 Motivation
+
+A small personal project inspired by tools like fastfetch and neofetch, but with a more playful aesthetic.
+
+---
+
+## 🧪 Development
+
+```bash
+git clone https://github.com/to1zzz/unicornfetch.git
+cd unicornfetch
+go run ./cmd/unicornfetch
+```
+
+---
+
+## 🔧 Build
+
+```bash
+go build -o unicornfetch ./cmd/unicornfetch
+```
+
+---
+
+## 🚀 CI (GitHub Actions)
+
+```yaml
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+
+      - run: go build ./...
+```
+
+---
+
+## 📜 License
+
+MIT
+
+```
 ```
