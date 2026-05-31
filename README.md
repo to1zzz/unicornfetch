@@ -106,11 +106,3 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
   <sub>Made with ❤️ and Go by <a href="https://github.com/to1zzz">to1zzz</a></sub>
 </div>
 ```
-
-После замены файла сделайте:
-
-```bash
-git add README.md
-git commit -m "fix: закрывающие кавычки для ASCII-блока"
-git push origin main
-```
