@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![GO](https://img.shields.io/github/go-mod/go-version/to1zzz/unicornfetch?style=for-the-badge&logo=go&label=Go&color=00ADD8)
+[GO](https://go.dev/)
 [![Linux Support](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://kernel.org/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/to1zzz/unicornfetch?style=for-the-badge&color=blueviolet)](https://github.com/to1zzz/unicornfetch/commits/main)
