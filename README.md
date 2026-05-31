@@ -104,6 +104,3 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
   <sub>Made with ❤️ and Go by <a href="https://github.com/to1zzz">to1zzz</a></sub>
 </div>
 ```
-- **Приятный "footer"** с указанием автора.
-
-Если захотите что-то изменить (например, добавить дополнительные бейджи или изменить цветовую схему), дайте знать — помогу!
