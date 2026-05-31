@@ -104,13 +104,3 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
   <sub>Made with ❤️ and Go by <a href="https://github.com/to1zzz">to1zzz</a></sub>
 </div>
 ```
-
-Чтобы всё заработало, выполните в терминале:
-
-```bash
-cd ~/путь/к/unicornfetch  # перейдите в папку вашего проекта
-git pull origin main       # на всякий случай получите последние изменения
-git add README.md
-git commit -m "fix: исправлен README"
-git push origin main
-```
