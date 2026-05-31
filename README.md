@@ -19,7 +19,8 @@
 - **Linux Optimized** – Built specifically for Linux-based systems.
 - **Easy to Install** – Simple build from source and copy to your `$PATH`.
 - **Extensible** – Pure Go code, easy to modify and customize.
-
+- **init** – Сan show init out of the box.
+  
 ## 🖥️ Showcase
 
 Here is UnicornFetch in action on a Gentoo Linux system:
