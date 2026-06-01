@@ -59,7 +59,7 @@ cd unicornfetch
 
 2. **Build the binary:**
 ```bash
-go build -o unicornfetch
+go build -buildvcs=false -o unicornfetch
 
 ```
 
