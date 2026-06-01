@@ -92,6 +92,7 @@ unicornfetch
 If you prefer not to install the binary system-wide, you can run it directly from the project directory:
 
 ```bash
+cd unicornfetch
 go run .
 
 ```
